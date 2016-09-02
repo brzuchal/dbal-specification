@@ -43,7 +43,7 @@ class AndSpecification extends AbstractSpecification
      */
     public function isSatisfiedBy($object) : bool
     {
-        return $this->first->isSatisfiedBy($object) && $this->isSatisfiedBy($object);
+        return $this->first->isSatisfiedBy($object) && $this->second->isSatisfiedBy($object);
     }
 
     /**
